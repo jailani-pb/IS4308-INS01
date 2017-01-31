@@ -24,5 +24,11 @@ public class Truck extends Car {
 		super.pressAccelerator(speed);
 		return "I am Truck. I pressed Accelerator. CurrentSpeed = " + currentSpeed;
 	}
+
+	@Override
+	public String turnSteering() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

@@ -1,6 +1,6 @@
 package ch03;
 
-public class Car {
+public abstract class Car {
 
 	String colour;
 	int noOfDoors;
@@ -42,6 +42,8 @@ public class Car {
 		currentSpeed = 0;
 		return "I have pressed the brake. CurrentSpeed = " + currentSpeed;
 	}
+	
+	public abstract String turnSteering();
 	
 	public static int getNoOfCars() {
 		return noOfCars;
