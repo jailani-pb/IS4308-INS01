@@ -15,14 +15,16 @@ public class Truck extends Car {
 	
 	@Override
 	public String pressBrake() {
+		int currentSpeed = this.getCurrentSpeed();
 		currentSpeed -= 10;
-		return "Truck has pressed the brake. CurrentSpeed = " + currentSpeed;
+		this.setCurrentSpeed(currentSpeed);
+		return "Truck has pressed the brake. CurrentSpeed = " + this.getCurrentSpeed();
 	}
 	
 	@Override
 	public String pressAccelerator(int speed) {
 		super.pressAccelerator(speed);
-		return "I am Truck. I pressed Accelerator. CurrentSpeed = " + currentSpeed;
+		return "I am Truck. I pressed Accelerator. CurrentSpeed = " + this.getCurrentSpeed();
 	}
 
 	@Override

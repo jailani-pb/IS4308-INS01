@@ -5,7 +5,7 @@ public abstract class Car {
 	String colour;
 	int noOfDoors;
 	int gasMileage;
-	int currentSpeed;
+	private int currentSpeed;
 	int totalMileage;
 	static int noOfCars;
 
@@ -48,5 +48,23 @@ public abstract class Car {
 	public static int getNoOfCars() {
 		return noOfCars;
 	}
+
+	public int getCurrentSpeed() {
+		return currentSpeed;
+	}
+
+	public void setCurrentSpeed(int currentSpeed) {
+		if(currentSpeed > 60) {
+			this.currentSpeed = 60;
+		} else {
+			if(currentSpeed < 0) {
+				this.currentSpeed = 0;
+			} else {
+				this.currentSpeed = currentSpeed;
+			}
+		}
+	}
+	
+	
 	
 }

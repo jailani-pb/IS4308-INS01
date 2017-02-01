@@ -7,7 +7,12 @@ public class RunProgram {
 		Car car1 = new Truck("Beep!");
 		System.out.println(car1.colour);
 		System.out.println(((Truck) car1).pressHorn());
-		System.out.println(car1.pressAccelerator(100));
+		System.out.println(car1.pressAccelerator(30));
+		System.out.println(car1.pressBrake());
+		System.out.println(car1.pressBrake());
+		System.out.println(car1.pressBrake());
+		System.out.println(car1.pressBrake());
+		System.out.println(car1.pressBrake());
 		System.out.println(car1.pressBrake());
 		
 		System.out.println("##SuperCar##");
