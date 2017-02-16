@@ -45,5 +45,13 @@ public class Car {
 	public static int getNoOfCars() {
 		return noOfCars;
 	}
+
+	@Override
+	public String toString() {
+		return "Car [colour=" + colour + ", noOfDoors=" + noOfDoors + ", gasMileage=" + gasMileage + ", currentSpeed="
+				+ currentSpeed + ", totalMileage=" + totalMileage + "]";
+	}
+	
+	
 	
 }

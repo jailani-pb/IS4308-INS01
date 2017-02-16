@@ -43,6 +43,8 @@ public class RunProgram {
 				+ firstCar.noOfCars);
 		System.out.println("noOfCars in secondCar: " 
 				+ secondCar.noOfCars);
+		
+		System.out.println(secondCar);
 	}
 
 }
