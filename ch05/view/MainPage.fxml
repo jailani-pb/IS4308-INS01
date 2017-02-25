@@ -4,19 +4,19 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 
-<VBox>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="ch05.controller.MainPageController">
 	<HBox>
 		<VBox spacing="30">
-			<Button text="Button1" underline="true" prefWidth="100"/>
-			<Button text="Button2" textFill="RED" prefWidth="200"/>
+			<Button text="Button1" underline="true" prefWidth="100" onAction="#printButton1"/>
+			<Button text="Button2" textFill="RED" prefWidth="200" onAction="#printButton2"/>
 		</VBox>
-		<TextField/>
+		<TextField fx:id="textFieldButton1"/>
 	</HBox>
 	
 	<HBox>
-		<TextField/>
-		<TextField/>
+		<TextField fx:id="textFieldButton2A"/>
+		<TextField fx:id="textFieldButton2B"/>
 	</HBox>
 	
-	<Label text="I am a Label"/>
+	<Label text="I am a Label" fx:id="labelMessage"/>
 </VBox>
