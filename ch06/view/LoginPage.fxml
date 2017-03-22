@@ -9,9 +9,9 @@
 		vgap="20" hgap="20" alignment="CENTER"
 		minWidth="300" minHeight="300">
 	<Label minWidth="100" minHeight="50" text="Username" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-	<TextField minWidth="150" minHeight="50" fx:id="textFieldUsername" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+	<TextField onAction="#login" minWidth="150" minHeight="50" fx:id="textFieldUsername" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
 	<Label minWidth="100" minHeight="50" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-	<PasswordField minWidth="150" minHeight="50" fx:id="passwordFieldPassword" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+	<PasswordField onAction="#login" minWidth="150" minHeight="50" fx:id="passwordFieldPassword" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
 	<Button minWidth="100" minHeight="50" text="Login" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#login"/>
 	<Label fx:id="labelMessage" GridPane.columnIndex="0" GridPane.rowIndex="3" 
 			GridPane.columnSpan="2" textFill="RED"/>
