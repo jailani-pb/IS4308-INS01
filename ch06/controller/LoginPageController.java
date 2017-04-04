@@ -25,8 +25,11 @@ public class LoginPageController {
 	public void login() throws IOException {
 		if(textFieldUsername.getText().equalsIgnoreCase("jailani") &&
 				passwordFieldPassword.getText().equals("rahman")) {
-			Parent root = FXMLLoader.load(getClass().getResource("../view/MainPage.fxml"));
-			Scene scene = new Scene(root, 300, 300);
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/MainPage.fxml"));
+			Parent root = fxmlLoader.load();
+			MainPageController mpc = fxmlLoader.getController();
+			mpc.setUsername("jailani");
+			Scene scene = new Scene(root, 800, 600);
 			RunProgram.stage.setScene(scene);
 		} else {
 			labelMessage.setText("Wrong username or password");

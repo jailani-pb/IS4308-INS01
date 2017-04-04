@@ -16,8 +16,8 @@ public class RunProgram extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-//		Parent root = FXMLLoader.load(getClass().getResource("view/LoginPage.fxml"));
-		Parent root = FXMLLoader.load(getClass().getResource("view/MainPage.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("view/LoginPage.fxml"));
+//		Parent root = FXMLLoader.load(getClass().getResource("view/MainPage.fxml"));
 		Scene scene = new Scene(root, 800, 600);
 		primaryStage.setScene(scene);
 		stage = primaryStage;

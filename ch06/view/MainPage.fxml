@@ -17,24 +17,24 @@
 		<URL value="@page.css" />
 	</stylesheets>
 	<VBox>
-		<ListView />
+		<ListView fx:id="listViewStudents" onMouseClicked="#retrieveStudent"/>
 	</VBox>
 	<VBox>
 		<HBox>
-			<Label text="Welcome" />
+			<Label fx:id="labelWelcome"/>
 			<Button text="Logout" onAction="#logout" />
 		</HBox>
 		<HBox>
 			<Label text="ID" />
-			<TextField />
+			<TextField fx:id="textFieldID"/>
 		</HBox>
 		<HBox>
 			<Label text="Name" />
-			<TextField />
+			<TextField fx:id="textFieldName"/>
 		</HBox>
 		<HBox>
 			<Label text="Age" />
-			<TextField />
+			<TextField fx:id="textFieldAge"/>
 		</HBox>
 		<HBox>
 			<Label text="Gender"/>
@@ -43,16 +43,16 @@
 				<ToggleGroup fx:id="genderGroup"/>
 			</fx:define>
 			
-			<RadioButton text="Male" toggleGroup="$genderGroup" selected="true"/>
-			<RadioButton text="Female" toggleGroup="$genderGroup"/>
+			<RadioButton text="Male" fx:id="radioButtonMale" toggleGroup="$genderGroup" selected="true"/>
+			<RadioButton text="Female" fx:id="radioButtonFemale" toggleGroup="$genderGroup"/>
 		</HBox>
 		<HBox>
 			<Label text="Under Probation?" />
-			<CheckBox />
+			<CheckBox fx:id="checkBoxUnderProbation"/>
 		</HBox>
 		<HBox>
 			<Label text="School" />
-			<ComboBox>
+			<ComboBox fx:id="comboBoxSchool">
 				<items>
 					<FXCollections fx:factory="observableArrayList">
 						<String fx:value="SICT" />
@@ -64,8 +64,8 @@
 			</ComboBox>
 		</HBox>
 		<HBox>
-			<Button text="Add"/>
-			<Button text="Reset"/>
+			<Button text="Add" onAction="#addStudent"/>
+			<Button text="Edit" fx:id="buttonEdit" onAction="#editStudent" disable="true"/>
 		</HBox>
 	</VBox>
 </HBox>
