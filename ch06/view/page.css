@@ -3,6 +3,8 @@ Label {
 	-fx-max-width: 150;
 	-fx-min-height: 40;
 	-fx-max-height: 40;
+	-fx-text-fill: RED;
+	-fx-font-size: 30;
 }
 
 TextField {
